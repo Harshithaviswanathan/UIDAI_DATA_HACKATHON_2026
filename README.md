@@ -109,9 +109,9 @@ that remain simple, explainable, and policy-friendly.
 
 ```
 ├── 🗂️ data/                              
-│   ├── enrolment_csv_files/                       
-│   ├── demographic_csv_files/                      
-│   └── biometric_csv_files/                        
+│   ├── enrolment.zip          #unzip 3 files and extract csv files           
+│   ├── demographic.zip                      
+│   └── biometric.zip                        
 │
 ├── 🚀 uidai_solution.ipynb
 │
