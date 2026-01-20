@@ -160,6 +160,8 @@ Detects the **"Paperwork Trap"**—where demographic updates create a false sens
 * **Impact:** Predicts **40–60% higher authentication failure** at PDS/Banks in high-friction zones.
 
 ---
+![AMU DASHBOARD IMG](./outputs/dashboards/1.png)
+
 
 ## 🤖 Machine Learning Performance
 
