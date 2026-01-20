@@ -159,6 +159,11 @@ Detects the **"Paperwork Trap"**—where demographic updates create a false sens
 * **Friction Score:** $demo\_updates / (bio\_updates + 1)$
 * **Impact:** Predicts **40–60% higher authentication failure** at PDS/Banks in high-friction zones.
 
+### 4. Temporal Analysis
+* The temporal analysis models Aadhaar’s lifecycle using enrolments as identity inflow, update activity as maintenance load, and a derived Trust Score to quantify database stability over time.
+* An increasing Trust Score trend (≈0.1 → 2.3) indicates a gradual transition from mass enrolment toward a more stable, service-sustainability phase.
+* Monthly monitoring enables early detection of policy-induced update surges, supporting proactive capacity planning and system resilience.
+
 ---
 ![AMU DASHBOARD IMG](./outputs/dashboards/3.png)
 
