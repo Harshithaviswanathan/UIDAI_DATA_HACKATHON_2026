@@ -108,17 +108,15 @@ that remain simple, explainable, and policy-friendly.
 ## 🗃️ Project Structure
 
 ```
-UIDAI_DATA_HACKATHON_2026_NIRMALYAGHOSH/
-│
 ├── 🗂️ data/                              
-│   ├── enrollment/                       
-│   ├── demographic/                      
-│   └── biometric/                        
+│   ├── enrolment_csv_files/                       
+│   ├── demographic_csv_files/                      
+│   └── biometric_csv_files/                        
 │
 ├── 🚀 uidai_solution.ipynb
 │
 ├── 🎯 outputs/
-│   └── charts/                         
+│   └── graphs/                         
 │   └── dashboards/
 │
 └── 📄 readme.md                         
