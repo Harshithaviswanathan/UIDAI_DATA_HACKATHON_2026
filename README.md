@@ -184,6 +184,8 @@ Detects the **"Paperwork Trap"**—where demographic updates create a false sens
 🧠 Child Identity Transition Risk Prediction
 <p> This model predicts <b>children at risk of Aadhaar identity failure</b> due to missing mandatory biometric updates at age 5 and 15. </p> <ul> <li><b>Objective:</b> Detect identity transition failures before adulthood</li> <li><b>Key Features:</b> Age cohort, biometric history, district-level update behavior</li> <li><b>Risk Signal:</b> Age threshold crossed without biometric refresh</li> <li><b>Policy Use:</b> Prevents long-term exclusion from welfare and education services</li> </ul> <p> <b>Prediction Outcome:</b> Flagged <b>4,902 children</b> as high-risk for future authentication failure. </p> <hr/>
 
+![AMU DASHBOARD IMG](./outputs/graphs/10.png)
+
 ## 🔍 Key Societal Insights
 *   **The Adult Bias:** Adult updates are **64.7x** more frequent than child updates, revealing a critical policy gap in child biometric maintenance.
 *   **Migration Pulse:** Identified **Pune, Thane, and Murshidabad** as the top 3 infrastructure pressure hubs due to high adult demographic shifts.
@@ -221,7 +223,13 @@ Capacity expansion in the Top 10 Migration Hubs to handle demographic update sur
 
 ---
 
+## Team members
 
+* Pravalika Valluri
+* Harshitha V
+* Kiruthika V G
+
+---
 
 
 
