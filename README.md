@@ -164,24 +164,25 @@ Detects the **"Paperwork Trap"**—where demographic updates create a false sens
 * An increasing Trust Score trend (≈0.1 → 2.3) indicates a gradual transition from mass enrolment toward a more stable, service-sustainability phase.
 * Monthly monitoring enables early detection of policy-induced update surges, supporting proactive capacity planning and system resilience.
 
+### 5. Age-Based Identity Transition Analysis
+* Analyzes biometric update compliance across children, adults, and seniors
+* Identifies critical gaps in mandatory Age 5 & Age 15 biometric updates
+* Reveals a severe adult-update bias — adult updates are 64.7× higher than child updates
+* Flags 4,902 children at high risk of future authentication failure
+
 ---
 ![AMU DASHBOARD IMG](./outputs/dashboards/3.png)
 
 
 ## 🤖 Machine Learning Performance
 
-### **District Risk Classification**
-Using a **RandomForestClassifier** to categorize district risk levels.
-
-| Metric | Value |
-| :--- | :--- |
-| **Accuracy** | 99.36% |
-| **Precision** | 99.67% |
-| **F1-Score** | 92.69% |
-
-**Feature Importance:** Total Update activity (20.2%) and Adult Population size (17.9%) are the strongest predictors of system stability.
-
----
+<p> Beyond descriptive analytics, AadhaarSentinel uses supervised machine learning to <b>predict future risk patterns</b> in Aadhaar infrastructure — enabling UIDAI to act <b>before failures occur</b>. </p> <hr/>
+🧠 District Risk Classification (System Stress Prediction)
+<p> This model classifies districts into <b>Low, Medium, and High Risk</b> categories based on enrolment pressure, update imbalance, demographic structure, and migration signals. </p> <ul> <li><b>Objective:</b> Identify districts likely to experience authentication failures or service overload</li> <li><b>Algorithm:</b> Random Forest Classifier</li> <li><b>Key Inputs:</b> Enrolments, biometric updates, demographic updates, adult population share</li> <li><b>Policy Use:</b> Enables <b>targeted audits</b> instead of blanket inspections</li> </ul> <table> <tr><th>Metric</th><th>Value</th></tr> <tr><td>Accuracy</td><td><b>99.36%</b></td></tr> <tr><td>Precision</td><td><b>99.67%</b></td></tr> <tr><td>F1-Score</td><td><b>92.69%</b></td></tr> </table> <p> <b>Top Predictors:</b> Total update volume (20.2%) and adult population size (17.9%) </p> <hr/>
+🧠 Biometric Update Desert Prediction (Future Failure Zones)
+<p> This model predicts <b>pincodes likely to become biometric update deserts</b>, where mandatory updates are chronically missed despite active demographic changes. </p> <ul> <li><b>Objective:</b> Predict silent biometric neglect before authentication failures spike</li> <li><b>Learning Signal:</b> Low bio-updates + high demographic churn</li> <li><b>Output:</b> Binary risk flag for each pincode</li> <li><b>Policy Use:</b> Guides <b>mobile enrolment van deployment</b></li> </ul> <p> <b>Prediction Outcome:</b> Identified <b>99 high-risk pincodes</b> likely to face future authentication failures without intervention. </p> <hr/>
+🧠 Child Identity Transition Risk Prediction
+<p> This model predicts <b>children at risk of Aadhaar identity failure</b> due to missing mandatory biometric updates at age 5 and 15. </p> <ul> <li><b>Objective:</b> Detect identity transition failures before adulthood</li> <li><b>Key Features:</b> Age cohort, biometric history, district-level update behavior</li> <li><b>Risk Signal:</b> Age threshold crossed without biometric refresh</li> <li><b>Policy Use:</b> Prevents long-term exclusion from welfare and education services</li> </ul> <p> <b>Prediction Outcome:</b> Flagged <b>4,902 children</b> as high-risk for future authentication failure. </p> <hr/>
 
 ## 🔍 Key Societal Insights
 *   **The Adult Bias:** Adult updates are **64.7x** more frequent than child updates, revealing a critical policy gap in child biometric maintenance.
